@@ -8,6 +8,6 @@ public class watchController {
 
     @RequestMapping("/test")
     public String rolex() {
-        return ("I love Rolex");
+        return ("I love Rolex and Patek Philippe");
     }
 }
