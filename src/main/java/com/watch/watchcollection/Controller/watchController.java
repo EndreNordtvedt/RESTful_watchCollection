@@ -1,13 +1,19 @@
 package com.watch.watchcollection.Controller;
 
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.watch.watchcollection.Entity.watches;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 public class watchController {
 
-    @RequestMapping("/test")
-    public String rolex() {
-        return ("I love Rolex and Patek Philippe and omega and AP");
+    // Get all watches
+    @GetMapping("/watches")
+    public List<watches> getAllWatches() {
+        return null;
     }
 }
